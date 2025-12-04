@@ -1,0 +1,692 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+nav {
+  background: linear-gradient(to left, rgb(157, 77, 114), rgb(143, 143, 255));
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+nav div .logo {
+  color: white;
+  width: 20%;
+  height: 70px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+nav div .bars {
+  display: none;
+  color: white;
+  font-size: 30px;
+  align-self: center;
+}
+@media (max-width: 992px) {
+  nav div .bars {
+    display: block;
+  }
+}
+nav div .nav-overlay {
+  background-color: rgba(0, 0, 0, 0.781);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 555;
+  opacity: 0;
+  pointer-events: none;
+}
+nav div .nav-overlay button {
+  right: 30px;
+  top: 30px;
+  position: absolute;
+  opacity: 1;
+}
+nav div .nav-overlay button:hover {
+  opacity: 0.7;
+}
+nav div .menu {
+  width: 80%;
+  z-index: 999;
+}
+nav div .menu ul {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+nav div .menu ul li {
+  cursor: pointer;
+}
+nav div .menu ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  nav div .menu ul li a {
+    font-size: 14px;
+  }
+}
+nav div .menu ul .active a {
+  border-bottom: 1px solid white;
+}
+nav div .menu .select-box {
+  position: relative;
+  width: 100px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+nav div .menu .select-box .selected {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav div .menu .select-box .selected img {
+  width: 30px;
+  height: 30px;
+  justify-self: center;
+}
+nav div .menu .select-box .options {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.158);
+  display: none;
+}
+nav div .menu .select-box .options div {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+nav div .menu .select-box .options div img {
+  width: 30px;
+  height: 30px;
+}
+nav div .menu .select-box .options div:hover {
+  background: #333;
+}
+@media (min-width: 992px) {
+  nav div .menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+@media (max-width: 992px) {
+  nav div .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: 100vh;
+    padding: 30px 0px;
+    background-color: rgb(56, 56, 56);
+    opacity: 0;
+    pointer-events: none;
+  }
+  nav div .menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: unset;
+  }
+  nav div .menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+  }
+  nav div .menu ul li:hover {
+    background-color: rgb(65, 65, 65);
+  }
+  nav div .menu ul li a {
+    font-size: 18px;
+  }
+}
+nav div .menu-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 92.8vh;
+  position: relative;
+  top: 53px;
+  z-index: 1;
+}
+#home .overlay {
+  background: linear-gradient(to left, rgb(157, 77, 114), rgb(143, 143, 255));
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#home .container {
+  position: relative;
+  height: 100%;
+  z-index: 3;
+}
+#home .container .home-content {
+  color: white;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+#home .container .home-content h1 {
+  font-size: 70px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#home .container .home-content h3 {
+  font-weight: 600;
+  font-size: 23px;
+}
+#home .container .home-content p {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#home .container .home-content button {
+  color: white;
+  background-color: transparent;
+  width: fit-content;
+  align-self: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#home .container .home-content button:hover {
+  background-color: white;
+  color: rgb(219, 77, 115);
+}
+@media (max-width: 992px) {
+  #home .container .home-content {
+    width: 100%;
+  }
+  #home .container .home-content h1 {
+    font-size: 40px;
+  }
+  #home .container .home-content h3 {
+    font-size: 23px;
+  }
+  #home .container .home-content p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #home .container .home-content button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  #home .container .home-content h1 {
+    font-size: 37px;
+  }
+  #home .container .home-content h3 {
+    font-size: 19px;
+  }
+  #home .container .home-content p {
+    font-size: 15px;
+  }
+}
+
+#To-Do {
+  padding: 100px 0;
+}
+#To-Do .to-do-head h1 {
+  color: rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#To-Do .to-do-head h4 {
+  color: gray;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  #To-Do .to-do-head h4 {
+    font-size: 17px;
+  }
+}
+#To-Do .to-do-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+}
+#To-Do .to-do-cards div {
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#To-Do .to-do-cards div img {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+}
+#To-Do .to-do-cards div h2 {
+  color: rgb(219, 77, 115);
+}
+#To-Do .to-do-cards div p {
+  color: rgb(95, 95, 95);
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  #To-Do .to-do-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  #To-Do .to-do-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.827);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.video button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 25px;
+}
+.video button:hover {
+  opacity: 0.5;
+}
+@media (max-width: 576px) {
+  .video button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .video iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .video iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media (max-width: 425px) {
+  .video iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.video.Active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#video {
+  padding: 100px 0;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+#video .video-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: brightness(60%);
+  top: 0;
+}
+#video .video-content {
+  position: relative;
+  z-index: 5;
+}
+#video .video-content .video-head {
+  padding: 30px 0;
+}
+#video .video-content .video-head h1 {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#video .video-content .video-head h4 {
+  font-weight: 300;
+  font-size: 24px;
+}
+#video .video-content i {
+  border: 2px solid white;
+  padding: 25px 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+@media (max-width: 576px) {
+  #video .video-content .video-head h4 {
+    font-size: 17px;
+  }
+  #video .video-content i {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+}
+
+#locations {
+  background-color: rgb(227, 227, 227);
+  padding: 100px 0;
+}
+#locations .locations-head {
+  position: relative;
+  z-index: 6;
+  padding: 30px 0;
+}
+#locations .locations-head h1 {
+  color: rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#locations .locations-head h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+@media (max-width: 576px) {
+  #locations .locations-head h4 {
+    font-size: 18px;
+  }
+}
+#locations .locations-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+#locations .locations-cards .loc-card {
+  display: flex;
+}
+#locations .locations-cards .loc-card img {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  #locations .locations-cards .loc-card img {
+    width: 45%;
+  }
+}
+#locations .locations-cards .loc-card .location-content {
+  padding: 20px;
+  background-color: white;
+}
+#locations .locations-cards .loc-card .location-content h2 {
+  color: rgb(79, 79, 79);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#locations .locations-cards .loc-card .location-content p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 35px;
+}
+#locations .locations-cards .loc-card .location-content button {
+  background-color: white;
+  color: rgb(219, 77, 115);
+  border: 2px solid rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 7px 20px;
+}
+#locations .locations-cards .loc-card .location-content button:hover {
+  background-color: rgb(219, 77, 115);
+  color: white;
+}
+@media (max-width: 576px) {
+  #locations .locations-cards .loc-card .location-content {
+    padding: 5px;
+  }
+  #locations .locations-cards .loc-card .location-content p {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+  }
+  #locations .locations-cards .loc-card .location-content button {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+}
+@media (max-width: 425px) {
+  #locations .locations-cards .loc-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  #locations .locations-cards .loc-card img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 992px) {
+  #locations .locations-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+#hotels {
+  padding: 100px 0;
+}
+#hotels .hotels-head h1 {
+  color: rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+#hotels .hotels-head h3 {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  #hotels .hotels-head h3 {
+    font-size: 16px;
+  }
+}
+#hotels .hotels-filter button {
+  background-color: transparent;
+  padding: 5px 20px;
+  color: rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  border: 2px solid rgb(219, 77, 115);
+  border-radius: 5px;
+}
+#hotels .hotels-filter button:hover {
+  background-color: rgb(219, 77, 115);
+  color: white;
+}
+@media (max-width: 992px) {
+  #hotels .hotels-filter button {
+    padding: 3px 10px;
+    font-size: 13px;
+  }
+}
+#hotels .hotels-cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#hotels .hotels-cards div {
+  padding: 10px;
+}
+#hotels .hotels-cards div img {
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+#hotels .hotels-cards div h2 {
+  color: rgb(219, 77, 115);
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+@media (max-width: 576px) {
+  #hotels .hotels-cards div h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 992px) {
+  #hotels .hotels-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  #hotels .hotels-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+#contact {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contact .contact-head {
+  padding: 30px 0;
+}
+#contact .contact-head h1 {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  #contact .contact-head h4 {
+    font-size: 17px;
+  }
+}
+#contact .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+#contact .contact-form form .input-box label {
+  display: flex;
+  transform: translateY(-30px);
+}
+#contact .contact-form form .input-box input {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+}
+#contact .contact-form form .input-box input:focus + label {
+  transform: translateY(-60px);
+}
+#contact .contact-form form .input-box input:valid + label {
+  transform: translateY(-60px);
+}
+#contact .contact-form form .textarea {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+}
+#contact .contact-form form .textarea label {
+  transform: translateY(-30px);
+}
+#contact .contact-form form .textarea textarea {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  height: 40px;
+}
+#contact .contact-form form .textarea textarea:focus + label {
+  transform: translateY(-70px);
+}
+#contact .contact-form form .textarea textarea:valid + label {
+  transform: translateY(-70px);
+}
+#contact .contact-form form button {
+  background-color: transparent;
+  color: white;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  grid-column: span 3;
+  width: fit-content;
+  justify-self: center;
+  border: 2px solid white;
+  padding: 5px 30px;
+  border-radius: 50px;
+}
+#contact .contact-form form button:hover {
+  background-color: white;
+  color: rgb(219, 77, 115);
+}
+@media (max-width: 576px) {
+  #contact .contact-form form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact .contact-form form .textarea {
+    grid-column: span 1;
+  }
+  #contact .contact-form form button {
+    grid-column: span 2;
+    align-self: center;
+    padding: 3px 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  #contact .contact-form form {
+    grid-template-columns: 1fr;
+  }
+  #contact .contact-form form .textarea {
+    grid-column: span 1;
+  }
+  #contact .contact-form form button {
+    grid-column: span 1;
+  }
+}/*# sourceMappingURL=style.css.map */

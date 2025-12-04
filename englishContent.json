@@ -1,0 +1,150 @@
+{
+    "navbar":{
+        "l1": "Home",
+        "l2": "To-Do List",
+        "l3": "Video",
+        "l4": "Top Locations",
+        "l5": "Hotels",
+        "l6": "Stay in Touch"
+    },
+    "home": {
+        "image": "images/banner-bg-01.jpg",
+        "head": "Dream Vacations",
+        "secondaryHead": "The world is a book, and those who do not travel read only a page.",
+        "text": "For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.",
+        "button": "Discover Now"
+    },
+    "ToDo":{
+        "head": "Check your To-Do List",
+        "secondaryHead": "Preparing for a Road Trip Checklist",
+        "cards":{
+            "card1":{
+                "image": "images/todo-icon-01.png",
+                "head": "Visa/Papers",
+                "text": "We help you prepare and submit all required travel documents quickly and correctly, ensuring a smooth and stress-free visa process."
+            },
+            "card2":{
+                "image": "images/todo-icon-02.png",
+                "head": "Hotel Booking",
+                "text": "Find and reserve the perfect accommodation at the best rates, from budget stays to luxury hotels tailored to your needs."
+            },
+            "card3":{
+                "image": "images/todo-icon-03.png",
+                "head": "Luxury",
+                "text": "Enjoy premium, high-end travel experiences designed for comfort, exclusivity, and unforgettable memories."
+            },
+            "card4":{
+                "image": "images/todo-icon-04.png",
+                "head": "Shopping",
+                "text": "Discover the best local shops, markets, and malls with curated recommendations for unique gifts and top brands."
+            },
+            "card5":{
+                "image": "images/todo-icon-05.png",
+                "head": "Sport",
+                "text": "Explore exciting sports activities and events, from outdoor adventures to indoor experiences for all skill levels."
+            },
+            "card6":{
+                "image": "images/todo-icon-06.png",
+                "head": "Support",
+                "text": "Our team is available to assist you at any time, providing help, guidance, and solutions throughout your entire journey."
+            }
+        }
+
+    },
+
+
+    "video":{
+        "image":"images/video-bg.jpg",
+        "head": "Watch the video",
+        "text": "All journeys have secret destinations of which the traveler is unaware."
+    },
+
+
+
+    "topLocations":{ 
+        "head": "Top Locations",
+        "secondaryHead": "Every day is a journey, and the journey itself is home.",
+        "cards":{
+            "card1":{
+                "image":"images/location-01.jpg",
+                "head":"London",
+                "text": "At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations.",
+                "button":"Explore Now"
+            },
+            "card2":{
+                "image":"images/location-03.jpg",
+                "head":"New York",
+                "text": "At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers",
+                "button":"Explore Now"
+            },
+            "card3":{
+                "image":"images/location-02.jpg",
+                "head":"Paris",
+                "text": "Eiffel Tower and Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré",
+                "button":"Explore Now"
+            },
+            "card4":{
+                "image":"images/location-04.jpg",
+                "head":"Hong Kong",
+                "text": "Hong Kong is also a major shopping destination, famed for bespoke tailors and Temple Street Night Market.",
+                "button":"Explore Now"
+            }
+        }
+    },
+
+
+    
+    "hotels":{
+        "head":"Best Hotels Out There",
+        "secondaryHead":"The Great Advantage Of A Hotel Is a Refuge From Home Life",
+        "hotelsFilter":{
+            "1":["All", "all"],
+            "2":["London", "london"],
+            "3":["Paris", "paris"],
+            "4":["New York", "new york"],
+            "5":["Hong Kong", "hong kong"]
+        },
+        "hotelCards":{
+            "hotel1":{
+                "filter": "london",
+                "image":"images/hotel-01.jpg",
+                "hotelName":"The Royal Thames Hotel"
+            },
+            "hotel2":{
+                "filter":"london",
+                "image":"images/hotel-02.jpg",
+                "hotelName":"Kensington Grand Suites"
+            },
+            "hotel3":{
+                "filter": "paris",
+                "image":"images/hotel-03.jpg",
+                "hotelName":"Hôtel Lumière Paris"
+            },
+            "hotel4":{
+                "filter": "paris",
+                "image":"images/hotel-04.jpg",
+                "hotelName":"Parisian Garden Palace"
+            },
+            "hotel5":{
+                "filter":"new york",
+                "image":"images/hotel-05.jpg",
+                "hotelName":"Harbourview Sky Resort"
+            },
+            "hotel6":{
+                "filter":"hong kong",
+                "image":"images/hotel-06.jpg",
+                "hotelName":"Pearl Dragon Hotel"
+            }
+        }
+    },
+    "stayInTouch":{
+        "image": "images/GetInTouch-bg.jpg",
+        "head":"Get in Touch",
+        "secondaryHead": "Stay in touch for more information",
+        "nameInput":"Name",
+        "phoneInput":"Phone",
+        "emailInput":"Email",
+        "emailTextArea":"Email",
+        "button":"SUBMIT"
+    }
+}

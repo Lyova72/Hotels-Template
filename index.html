@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="">
+        <div class="container d-flex justify-content-between">
+            <div class="logo d-flex align-items-center">
+                <h1>Voyage</h1>
+            </div>
+            <i class="fa-solid fa-bars bars"></i>
+            <div class="nav-overlay">
+                <button class="btn-close btn-close-white menu-close"></button>
+            </div>
+            <div class="menu">
+                <ul class="align-items-lg-center align-items-start ">
+                    <li class="active">
+                        <a class="navbar-item " href="#home"></a>
+                    </li>
+                    <li class="">
+                        <a class="navbar-item " href="#To-Do"></a>
+                    </li>
+                    <li class="">
+                        <a class="navbar-item " href="#video"></a>
+                    </li>
+                    <li class="">
+                        <a class="navbar-item " href="#locations"></a>
+                    </li>
+                    <li class="">
+                        <a class="navbar-item " href="#hotels"></a>
+                    </li>
+                    <li class="">
+                        <a class="navbar-item " href="#contact"></a>
+                    </li>
+                    <li class="lang-options">
+                        <div class="select-box">
+                            <div class="selected">Language</div>
+                            <div class="options">
+                                <div data-lang="eng"><img src="images/uk.png"></div>
+                                <div data-lang="arm"><img src="images/arm.png"></div> 
+                                <div data-lang="rus"><img src="images/rus.png"></div> 
+                            </div> 
+                        </div>
+                    </li>
+                </ul>   
+
+            </div>
+        </div>
+    </nav>
+
+    <!--      home       -->
+
+
+
+    <section id="home">
+        <div class="overlay"></div>
+        
+        <div class="container d-flex justify-content-center home-content"></div>
+    </section>
+
+
+    <!--      TO DO       -->
+
+    <section class="container" id="To-Do">
+        <div class="to-do-head text-center" ></div>
+
+        <div class="to-do-cards" ></div>
+    </section>
+    
+
+    <!--      Video       -->
+
+
+    <div class="video container-fluid">
+        <iframe id="yt" width="760" height="415" src="https://www.youtube.com/embed/AQ6GmpMu5L8?si=BiwrCg1NomMa-cd2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button class="btn-close btn-close-white video-close"></button>
+    </div>
+    <section id="video">
+        <div class="video-overlay"></div>
+        
+        <div class="video-content container  text-center">
+            <div class="video-head"></div>
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </section>
+
+
+
+
+    <!--        Top Locations      -->
+
+
+
+    <section id="locations">
+        <div class="container">
+            <div class="locations-head text-center"></div>
+
+            <div class="locations-cards"></div>
+        </div>
+    </section>
+
+
+
+
+    <!--        Hotels        -->
+
+
+    <section class=" container d-flex flex-column gap-4 " id="hotels">
+        <div class="hotels-head text-center">
+
+        </div>
+        <div class="hotels-filter d-flex gap-3 flex-lg-nowrap flex-wrap justify-content-center"></div>
+
+        <div class="hotels-cards">
+            
+        </div>
+    </section>
+
+
+
+
+    <!--     Contact     -->
+
+
+
+    <section id="contact">
+        <div class="container  text-white">
+            
+        </div>
+    </section>
+
+
+
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

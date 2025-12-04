@@ -1,0 +1,11 @@
+$georgiaFont: "Georgia", serif;
+$poppinsFont: "Poppins", sans-serif;
+$red:rgb(219, 77, 115);
+
+
+@mixin background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
