@@ -144,7 +144,7 @@
         "nameInput":"Name",
         "phoneInput":"Phone",
         "emailInput":"Email",
-        "emailTextArea":"Email",
+        "emailTextArea":"Message",
         "button":"SUBMIT"
     }
 }
