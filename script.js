@@ -46,6 +46,7 @@ function language(){
 language()
 
 const menu = document.querySelector(".menu")
+localStorage.setItem('hotelFilter', 'all')
 function contentRender(data){
     
     ///////////       Navbar   ////////// 
