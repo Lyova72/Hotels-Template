@@ -675,8 +675,8 @@ nav div .menu-active {
   #contact .contact-form form button {
     grid-column: span 2;
     align-self: center;
-    padding: 3px 10px;
-    font-size: 13px;
+    padding: 5px 20px;
+    font-size: 15px;
   }
 }
 @media (max-width: 425px) {
